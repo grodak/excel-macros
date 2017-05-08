@@ -312,7 +312,7 @@ For i = 2 To ws.Cells(Rows.Count, 12).End(xlUp).Row
             MsgBox "ERROR! Division" & ws.Cells(i, 12).Value & " not in list!"
     End Select
     
-    ws2.ExportAsFixedFormat Type:=xlTypePDF, fileName:="H:\CEEM\MHP\Change Reports\" & fileName & "ChangeReport" & Format(Now - 7, "yyyymmdd") & "-" & Format(Now, "yyyymmdd"), Quality:=xlQualityStandard, IncludeDocProperties:=True, IgnorePrintAreas:=False, OpenAfterPublish:=False
+    ws2.ExportAsFixedFormat Type:=xlTypePDF, fileName:="x:\xxx\xxx\" & fileName & "ChangeReport" & Format(Now - 7, "yyyymmdd") & "-" & Format(Now, "yyyymmdd"), Quality:=xlQualityStandard, IncludeDocProperties:=True, IgnorePrintAreas:=False, OpenAfterPublish:=False
 Next
 
 MsgBox "Done"
