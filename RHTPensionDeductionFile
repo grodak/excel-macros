@@ -1,5 +1,5 @@
 Attribute VB_Name = "Module15"
-Sub RHTPensionDeductionFile2()
+Sub RHTPensionDeductionFile()
 
 Dim ws As Worksheet
 Dim lr As Long, lc As Long
@@ -38,7 +38,7 @@ Set ws4 = Sheets("COPSTrust")
 '================================
 Sheets("Sheet1").Activate
 With Sheets("Sheet1").ListObjects.Add(SourceType:=0, Source:=Array( _
-    "OLEDB;Provider=Microsoft.ACE.OLEDB.12.0;Password="""";User ID=Admin;Data Source=Z:\Project Plans\COD Retiree VEBA\Retirement System Pension Deductions\RHTPenDeductions.mdb;Mode=ReadWrite;Extended Properties="""";Jet OLE" _
+    "OLEDB;Provider=Microsoft.ACE.OLEDB.12.0;Password="""";User ID=Admin;Data Source=Z:\XXX\XXX\XXX.mdb;Mode=ReadWrite;Extended Properties="""";Jet OLE" _
     , _
     "DB:System database="""";Jet OLEDB:Registry Path="""";Jet OLEDB:Database Password="""";Jet OLEDB:Engine Type=5;Jet OLEDB:Database Locki" _
     , _
@@ -61,7 +61,7 @@ With Sheets("Sheet1").ListObjects.Add(SourceType:=0, Source:=Array( _
     .AdjustColumnWidth = True
     .RefreshPeriod = 0
     .PreserveColumnInfo = True
-    .SourceDataFile = "Z:\Project Plans\COD Retiree VEBA\Retirement System Pension Deductions\RHTPenDeductions.mdb"
+    .SourceDataFile = "Z:\XXX\XXX\XXX.mdb"
     .ListObject.DisplayName = "Table_RHTPenDeductions_"
     .Refresh BackgroundQuery:=False
 End With
@@ -400,7 +400,7 @@ ws3.Range("E2:G" & lr2).ClearContents
 '==========================================
 wsCOPS.Activate
 With wsCOPS.ListObjects.Add(SourceType:=0, Source:=Array( _
-        "OLEDB;Provider=Microsoft.ACE.OLEDB.12.0;Password="""";User ID=Admin;Data Source=Z:\Project Plans\COD Retiree VEBA\Retirement System Pension Deductions\RHTPenDeductions.mdb;Mode=ReadWrite;Extended Properties="""";Jet OLE" _
+        "OLEDB;Provider=Microsoft.ACE.OLEDB.12.0;Password="""";User ID=Admin;Data Source=Z:\XXX\XXX\XXX.mdb;Mode=ReadWrite;Extended Properties="""";Jet OLE" _
         , _
         "DB:System database="""";Jet OLEDB:Registry Path="""";Jet OLEDB:Database Password="""";Jet OLEDB:Engine Type=5;Jet OLEDB:Database Locki" _
         , _
@@ -423,7 +423,7 @@ With wsCOPS.ListObjects.Add(SourceType:=0, Source:=Array( _
         .AdjustColumnWidth = True
         .RefreshPeriod = 0
         .PreserveColumnInfo = True
-        .SourceDataFile = "Z:\Project Plans\COD Retiree VEBA\Retirement System Pension Deductions\RHTPenDeductions.mdb"
+        .SourceDataFile = "Z:\XXX\XXX\XXX.mdb"
         .ListObject.DisplayName = "Table_RHTPenDeductions_3"
         .Refresh BackgroundQuery:=False
 End With
