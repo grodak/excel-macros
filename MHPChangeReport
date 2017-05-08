@@ -1,4 +1,3 @@
-Attribute VB_Name = "Module17"
 Sub MHPChangeReport()
 
 Dim ws As Worksheet, ws2 As Worksheet
