@@ -18,9 +18,7 @@ If Not ActiveWindow.FreezePanes Then
     ActiveWindow.FreezePanes = True
 End If
 
-'===============================
-'Delete unnecessary data columns
-'===============================
+
 ws.Range("I:I,M:M,Q:Q,U:U,Y:Y,AA:AA,AC:AC,AE:AE,AG:AG,AK:AK,AO:AO,AS:AS").Delete
 
 '=================================================
